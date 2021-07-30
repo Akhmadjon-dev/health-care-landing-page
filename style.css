@@ -25,6 +25,7 @@ body {
     background-color: var(--main-bg);
     padding-left: 135px;
     padding-right: 50px;
+    min-height: 100vh;
 }
 
 header {
@@ -63,4 +64,85 @@ header {
     background-color: var(--white);
     border-radius: 5px;
     transition: all 0.3s;
+}
+
+.home__main {
+    padding-top: 200px;
+    display: flex;
+    width: 100%;
+}
+
+.home__text-container {
+    width: 50%;
+}
+
+.home__text-container h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+    /* or 146% */
+    color: #3E3E3E;
+    margin-bottom: 30px;
+}
+
+.home__text-container p {
+    font-size: 14px;
+    line-height: 30px;
+    /* or 214% */
+    color: rgba(117, 117, 117, 0.46);
+    margin-bottom: 60px;
+}
+
+.header__styled-title {
+    color: var(--main-color);
+}
+
+.home__form-search {
+    display: flex;
+    background-color: var(--white);
+    height: 86px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 4px 22px rgba(228, 245, 252, 0.3);
+    border-radius: 8px;
+}
+
+.home__input {
+    border: none;
+    background: rgba(245, 246, 250, 0.52);
+    border-radius: 8px;
+    padding: 17px 0px;
+    padding-left: 30px;
+}
+
+.home__btn-search {
+    background-color: var(--main-color);
+    border-radius: 8px;
+    padding: 12px 20px;
+    border: none;
+}
+
+.home__img-container {
+    width: 50%;
+    position: relative;
+}
+
+.home__main-img {
+    background: url("./img/home-img-bg.png") no-repeat center center;
+    width: 100%;
+    transform: scale(1.5);
+    position: absolute;
+}
+
+.home__img {
+    position: absolute;
+    width: 70px;
+    z-index: 10;
+}
+
+.home__chat-icon {
+    top: 20px;
+    right: 10px;
 }
